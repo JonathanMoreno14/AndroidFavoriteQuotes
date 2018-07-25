@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AndroidFavoriteQuotes</string>
+    <string name="json_url">https://gist.githubusercontent.com/JonathanMoreno14/d3032ce98e63b176cc839f2f046e2ca2/raw/b138a660b5bc92286e19c83175ab2fbb633f4e80/favoritequotes.json</string>
+
+    <string name="lorem_textplaceholder">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut ipsum et leo pulvinar aliquam.
+        Sed imperdiet ultricies dolor quis posuere. Quisque iaculis efficitur efficitur.
+    </string>
+
+</resources>

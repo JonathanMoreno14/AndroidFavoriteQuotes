@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@color/mainBackgroundColor"
+    android:id="@+id/container"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        >
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            card_view:cardElevation="2dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="@color/cardViewColor"
+            card_view:cardUseCompatPadding="false"
+            card_view:cardPreventCornerOverlap="false"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+
+                <TextView
+                    android:id="@+id/quotetextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp"
+                    android:paddingBottom="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="40dp"
+                    android:text="@string/lorem_textplaceholder"
+                    android:textColor="@color/alternativeTextColor"
+                    android:textIsSelectable="false"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/authorimage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_color="@color/cardViewColor"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/authortextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toEndOf="@+id/authorimage"
+            android:padding="5dp"
+            android:paddingBottom="20dp"
+            android:text="author"
+            android:textColor="@color/alternativeTextColor"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
